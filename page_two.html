@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Women Safety</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css" title="style">
+  <style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+      height: 100%;
+    }
+  
+        #menubar{
+        width:1600px !important;
+      }
+
+      ul#menu{
+        transform: translatex(30%) !important;
+      }
+    /* Optional: Makes the sample page fill the window. */
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+<div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="index.html">Welcome Page</a></li>
+          <li><a href="page_one.html">Navigation</a></li>
+          <li class="selected"><a href="page_two.html">Safe Zone</a></li>
+          <li ><a href="page_three.html">Guardians</a></li>
+          <li><a href="page_four.html">Safety Alarm</a></li>
+        </ul>
+      </div>
+  <div id="map"></div>
+  <script src="page_two.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbl-QdcG2sHyqxz4Qu_ZE7pjmZNY1KP7I&libraries=places&callback=initMap" async defer></script>
+</body>
+
+</html>
